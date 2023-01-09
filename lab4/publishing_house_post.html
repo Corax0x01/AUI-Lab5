@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Wydawnictwo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/publishing_house_post.css">
+    <script src="js/script.js" defer="defer"></script>
+    <script type="module" src="js/publishing_house_post.js" defer="defer"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Lab4 AUI</h1>
+        </header>
+
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publishing_house_list.html">Publishing houses</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-section">
+            <article class="text--justified">
+                <header><h2>Post publishing house</h2></header>
+                <form class="publishing_house__form" id="infoForm">
+                    <label for="name">Name:</label>
+                    <input class="ui-control ui-input" id="name" name="name"/>
+                    <label for="address">Address:</label>
+                    <input class="ui-control ui-input" id="address" name="address" type="text"/>
+                    <label for="phone">Phone:</label>
+                    <input class="ui-control ui-input" id="phone" name="phone" type="tel"/>
+                    <label for="price">E-mail:</label>
+                    <input class="ui-control ui-input" id="email" name="email" type="email"/>
+                    <input class="ui-control ui-button" type="submit" name="Update"/>
+                </form>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
