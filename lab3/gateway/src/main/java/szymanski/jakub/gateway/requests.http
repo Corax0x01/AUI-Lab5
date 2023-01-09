@@ -1,0 +1,85 @@
+//@no-log
+GET http://localhost:8080/api/books
+
+###
+
+//@no-log
+GET http://localhost:8080/api/books/1
+
+###
+// should return 404
+//@no-log
+GET http://localhost:8080/api/books/10
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses/PWN
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses/SUPERNOWA/books
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses/SUPERNOWA/books/1
+
+###
+
+POST http://localhost:8080/api/publishing_houses
+Content-Type: application/json
+
+{
+    "name": "test",
+    "address": "ul.test 1/12",
+    "phoneNumber": "123 456 789",
+    "email": "test@test.com"
+}
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses
+
+###
+
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+  "title": "TEST",
+  "author": "test test",
+  "price": 21.37,
+  "publishingHouse": "PWN"
+}
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses/test/books
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses/test/books/6
+
+###
+
+DELETE http://localhost:8080/api/publishing_houses/PWN
+
+
+###
+
+//@no-log
+GET http://localhost:8080/api/publishing_houses
+
+###
+
+DELETE http://localhost:8080/api/books/1
