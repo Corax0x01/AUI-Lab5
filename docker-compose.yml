@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+  m1:
+    build: ./M1/
+    tty: true
+    ports:
+      - "8000:80"
+    networks:
+      internal_nw:
+        ipv4_address: 172.28.0.2
+  m2:
+    build: ./M2/
+    tty: true
+    networks:
+      internal_nw:
+        ipv4_address: 172.28.0.3
+  m3:
+    build: ./M3/
+    tty: true
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+      - "8082:8082"
+    networks:
+      internal_nw:
+        ipv4_address: 172.28.0.4
+    volumes:
+      - ./M3:/backend
+
+networks:
+  internal_nw:
+    driver: bridge
+    ipam:
+      driver: default
+      config: 
+        - subnet: 172.28.0.0/16

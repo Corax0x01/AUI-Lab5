@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Lab4 AUI</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/publishing_house_edit.css"/>
+        <script src="js/script.js" defer="defer"></script>
+        <script type="module" src="js/publishing_house_edit.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Lab4 AUI</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publishing_house_list.html">Publishing houses</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2>Edit publishing house info</h2></header>
+                    <form class="publishing_house__form" id="infoForm">
+                        <label for="address">Address:</label>
+                        <input class="ui-control ui-input" id="address" name="address" type="text"/>
+                        <label for="phoneNumber">Phone number:</label>
+                        <input class="ui-control ui-input" id="phoneNumber" name="phoneNumber" type="tel"/>
+                        <label for="email">E-mail:</label>
+                        <input class="ui-control ui-input" id="email" name="email" type="email"/>
+                        <input class="ui-control ui-button" type="submit" name="Update"/>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>

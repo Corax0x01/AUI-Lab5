@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Wydawnictwo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/publishing_house_view.css">
+    <script src="js/script.js" defer="defer"></script>
+    <script type="module" src="js/publishing_house_view.js" defer="defer"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Lab4 AUI</h1>
+        </header>
+
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publishing_house_list.html">Publishing houses</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-section">
+            <article class="text--justified">
+                <header><h2 id="publishing_house_name">name</h2></header>
+                <section>
+                    <h3>Details</h3>
+                    <div class="details-grid">
+                        <label for="name">Name:</label><span id="name">name</span>
+                        <label for="address">Address:</label><span id="address">address</span>
+                        <label for="phone">Phone:</label><span id="phone">phone</span>
+                        <label for="email">E-mail:</label><span id="email">email</span>
+                    </div>
+                </section>
+                <section>
+                    <h3>Books</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>title</th>
+                                <th>edit</th>
+                                <th>view</th>
+                                <th>delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>title</td>
+                                <td><a href="#">edit</a></td>
+                                <td><a href="#">view</a></td>
+                                <td>
+                                    <button class="ui-button ui-control">delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+            <article id="add_book">
+            </article>
+        </section>
+    </div>
+</body>
+</html>

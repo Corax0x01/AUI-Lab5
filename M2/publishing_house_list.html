@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lab4 AUI">
+    <title>Lab4 AUI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer="defer"></script>
+    <script type="module" src="js/publishing_house_list.js" defer="defer"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Lab4 AUI</h1>
+        </header>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publishing_house_list.html">Publishing houses</a></li>
+            </ul>
+        </nav>
+        <section class="main-section">
+            <article class="text--justified">
+                <header><h2>Publishing houses</h2></header>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>view</th>
+                            <th>edit</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>name</td>
+                            <td><a href="#">view</a></td>
+                            <td><a href="#">edit</a></td>
+                            <td>
+                                <button class="ui-button ui-control">delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <section>
+                <a href="publishing_house_post.html">Add publishing house</a>
+            </section>
+        </section>
+    </div>
+</html>
